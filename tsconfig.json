@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./",
+    "allowJs": true,
+    "target": "es2022",
+    "declaration": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": ["./tsconfig.json"]
+}
