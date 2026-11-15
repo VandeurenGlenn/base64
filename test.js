@@ -13,3 +13,11 @@ test('base64', () => {
   const string = new TextDecoder().decode(base64Decoded)
   assert.equal(string, 'hi')
 })
+
+test('isBase64 accepts only the base64 alphabet', () => {
+  assert.equal(base64.isBase64(''), true)
+  assert.equal(base64.isBase64('AZaz09-_'), true)
+  assert.equal(base64.isBase64('a b'), false)
+  assert.equal(base64.isBase64('abc\n'), false)
+  assert.equal(base64.isBase64(123), false)
+})
