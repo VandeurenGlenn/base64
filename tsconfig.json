@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
     "allowJs": true,
-    "target": "es2022",
+    "target": "esnext",
     "declaration": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*.ts"
   ],
   "exclude": ["./tsconfig.json"]
 }
